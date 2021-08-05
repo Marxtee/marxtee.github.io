@@ -1973,7 +1973,7 @@ note-default {
 }
 @font-face {
   font-family: 'shangshou';
-  src: url("https://storge.matija.xyz/blog/ShangShouFangTangTi-2.ttf") format('truetype');
+  src: url("https://storge.matija.xyz/font/ShangShouFangTangTi-2.ttf") format('truetype');
 }
 ::selection {
   background: #ff577f;
