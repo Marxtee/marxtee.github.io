@@ -1,16 +1,16 @@
 <%
-var separator = theme.title_join_string || theme.tab_title_separator
-var title = page.title ? [page.title, config.title].join(separator) : config.title
-var keywords = page.keywords || config.keywords
-if (keywords instanceof Array) {
-  keywords = keywords.join(',')
-}
-var description = config.description
-if (page.description) {
-  description = page.description
-} else if(page.excerpt) {
-  description = strip_html(page.excerpt).substr(0, 200)
-}
+  var separator = theme.title_join_string || theme.tab_title_separator
+  var title = page.title ? [page.title, config.title].join(separator) : config.title
+  var keywords = page.keywords || config.keywords
+  if (keywords instanceof Array) {
+    keywords = keywords.join(',')
+  }
+  var description = config.description
+  if (page.description) {
+    description = page.description
+  } else if(page.excerpt) {
+    description = strip_html(page.excerpt).substr(0, 200)
+  }
 %>
 
 <head>

@@ -10,7 +10,6 @@
 # You can get more detailed help from the guide
 #---------------------------
 
-
 #---------------------------
 # 全局
 # Global
@@ -307,10 +306,10 @@ navbar:
     # - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
     # - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "标签", link: "/tags/", icon: "iconfont icon-tags-fill" }
-    - { key: "推特", link: "https://twitter.com/Karl_Matija", icon: "iconfont icon-twitter-fill" }
+    - { key: "习说", link: "/shuo/", icon: "iconfont icon-snapchat-fill" }
     - { key: "哔哩", link: "https://space.bilibili.com/386311682/", icon: "iconfont icon-bilibili" }
+    - { key: '云盘', link: 'https://pan.matija.asia/', icon: 'iconfont icon-twitch-fill'  }
     - { key: "关于", link: "/about/", icon: "iconfont icon-user-fill" }
-    
     # - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
@@ -501,7 +500,7 @@ post:
     # 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值
     # Author, based on `author` field in front-matter, if not set, based on `author` value in hexo config
     author:
-      enable: false
+      enable: true
 
     # 文章日期，优先根据 front-matter 里 date 字段，其次是 md 文件日期
     # Post date, based on `date` field in front-matter, if not set, based on create date of .md file
@@ -697,7 +696,7 @@ valine:
   appKey: uuSQRlu6oLLg9FiREfh2RWKK
   placeholder: 说点什么
   path: window.location.pathname
-  avatar: retro
+  avatar: robohash
   meta: ['nick', 'mail', 'link']
   pageSize: 10
   lang: zh-CN
@@ -849,10 +848,10 @@ about:
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/Marxtee", tip: "GitHub" }
-    - { class: "iconfont icon-bilibili", link: "https://space.bilibili.com/386311682", tip: "Bilibili" }
+    - { class: "iconfont icon-bilibili", link: "https://space.bilibili.com/386311682", tip: "哔哩哔哩" }
     - { class: "iconfont icon-twitter-fill", link: "https://twitter.com/Karl_Matija", tip: "Twitter" }
-    - { class: "iconfont icon-zhihu-fill", link: "https://www.zhihu.com/people/matija", tip: "Zhihu" }
-    - { class: "iconfont icon-dingding-fill", link: "https://www.yuque.com/matija", tip: "Yuque" }
+    - { class: "iconfont icon-zhihu-fill", link: "https://www.zhihu.com/people/matija", tip: "知乎" }
+    - { class: "iconfont icon-dingding-fill", link: "https://www.yuque.com/matija", tip: "语雀" }
     # - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
 
 
@@ -886,7 +885,7 @@ page404:
 # Links Page
 #---------------------------
 links:
-  enable: true
+  enable: false
   banner_img: https://storge.matija.xyz/blog/wallhaven-nrl7p1_1920x1080.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
