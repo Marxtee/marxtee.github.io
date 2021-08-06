@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" data-default-color-scheme=&#34;auto&#34;>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
 
 
 
@@ -74,6 +74,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
     
+    <!-- 和风天气 -->
     <li class="d-inline-flex align-items-center">
       <div id="he-plugin-simple"></div>
     </li>
@@ -248,7 +249,7 @@
     Fluid.utils.loadComments('#valine', function() {
       Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function() {
         var options = Object.assign(
-          {"appId":"ozQeJmO7mwSbsQdXtBMQf0h3-gzGzoHsz","appKey":"uuSQRlu6oLLg9FiREfh2RWKK","placeholder":"说点什么","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false,"requiredFields":[]},
+          {"appId":"ozQeJmO7mwSbsQdXtBMQf0h3-gzGzoHsz","appKey":"uuSQRlu6oLLg9FiREfh2RWKK","placeholder":"说点什么","path":"window.location.pathname","avatar":"robohash","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false,"requiredFields":[]},
           {
             el: "#valine",
             path: window.location.pathname
@@ -284,7 +285,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -293,7 +294,9 @@
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
           <label data-error="x" data-success="v"
-                 for="local-search-input">keyword</label>
+                 for="local-search-input">
+            关键词
+          </label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
